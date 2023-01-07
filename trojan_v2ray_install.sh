@@ -597,7 +597,7 @@ function installPackage(){
 
     if [ "$osRelease" == "centos" ]; then
        
-        # rpm -Uvh http://nginx.org/packages/centos/7/noarch/RPMS/nginx-release-centos-7-0.el7.ngx.noarch.rpm
+        rpm -Uvh http://nginx.org/packages/centos/7/noarch/RPMS/nginx-release-centos-7-0.el7.ngx.noarch.rpm
         rm -f /etc/yum.repos.d/nginx.repo
         # cat > "/etc/yum.repos.d/nginx.repo" <<-EOF
 # [nginx]
